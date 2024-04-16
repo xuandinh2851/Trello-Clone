@@ -1,3 +1,4 @@
+import Counter from "../Components/Counter";
 import Menu from "../Components/Menu";
 
 const Dashboard = () => {
@@ -6,6 +7,7 @@ const Dashboard = () => {
     <div>
       <Menu />
       <h1>Dashboard</h1>
+      <Counter />
     </div>
   );
 };

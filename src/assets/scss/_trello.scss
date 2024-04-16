@@ -1,4 +1,4 @@
-.trello-wrapper{
+.trello-wrapper {
   background: #d29034;
   position: fixed;
   z-index: 9999;
@@ -11,31 +11,33 @@
   flex-direction: column;
 
   header {
-    background: #a06e28;
-    padding: 12px 100px;
-    text-align: center;
-    box-shadow: 0 1px 2px #a06e28;
-    position: relative;
-
-    h1 {
-      color: #f9f5f0;
-    }
-
-    button {
-      color: #fff;
-      background: #ddab65;
-      padding: 6px 12px;
-      border-radius: 3px;
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    border: 1px solid #000;
   }
 
   main {
-    flex: 1;
-    width: 100%;
-    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #000;
+    flex: 1 1;
+    position: relative;
+
+    #board {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: 1px solid #000;
+      display: flex;
+      padding: 0 10px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+
+      li {
+        width: 500px;
+        border: 1px solid red;
+        flex-shrink: 0;
+      }
+    }
   }
 }
