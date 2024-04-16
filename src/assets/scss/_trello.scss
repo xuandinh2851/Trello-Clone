@@ -1,0 +1,41 @@
+.trello-wrapper{
+  background: #d29034;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    background: #a06e28;
+    padding: 12px 100px;
+    text-align: center;
+    box-shadow: 0 1px 2px #a06e28;
+    position: relative;
+
+    h1 {
+      color: #f9f5f0;
+    }
+
+    button {
+      color: #fff;
+      background: #ddab65;
+      padding: 6px 12px;
+      border-radius: 3px;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  main {
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+  }
+}
